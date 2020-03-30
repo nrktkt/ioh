@@ -32,12 +32,12 @@ adoptCats(() => Future(pickACatNameAtRandom()))
 ```
 
 Adds instances for `Bracket`, `Async`, and `Parallel` which provides
-* Functor
-* Applicative
-* Monad
-* MonadError
-* Defer
-* Sync
+* `Functor`
+* `Applicative`
+* `Monad`
+* `MonadError`
+* `Defer`
+* `Sync`
 
 ### Why is this useful?
 
