@@ -3,7 +3,7 @@
 `() => Future(println("oh"))`
 
 Add referential transparency and laziness with `Future`.
-Making it safe to use `Future` with tagless-final.
+Making it safe(r) to use `Future` with tagless-final.
 
 Say we want to adopt some cats, we just need to name them.
 ```scala
