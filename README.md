@@ -1,5 +1,7 @@
 # IOh
 
+![Maven Central](https://img.shields.io/maven-central/v/io.github.kag0/ioh_2.13?style=for-the-badge)
+
 `() => Future(println("oh"))`
 
 Add referential transparency and laziness with `Future`.
