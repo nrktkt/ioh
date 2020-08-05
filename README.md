@@ -33,13 +33,15 @@ adoptCats(() => Future(pickACatNameAtRandom()))
 // enjoy your new cats, fluffy and snowball
 ```
 
-Adds instances for `Bracket`, `Async`, and `Parallel` which provides
+Adds instances for `Effect`, and `Parallel` which provides
 * `Functor`
 * `Applicative`
 * `Monad`
 * `MonadError`
 * `Defer`
 * `Sync`
+* `Async`
+* etc
 
 ### Why is this useful?
 
