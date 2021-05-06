@@ -13,6 +13,7 @@ import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 import scala.language.postfixOps
 import scala.util.{Failure, Try}
+import io.github.kag0.i0._
 
 class Spec extends AnyFlatSpec with Matchers {
   implicit class Wait[A](f: Future[A]) {
@@ -24,9 +25,12 @@ class Spec extends AnyFlatSpec with Matchers {
     n.flatMap(i => IOh(i + 1))().await() shouldEqual 6
   }
 
+  import scala.concurrent.ExecutionContext.Implicits.global
+  println(I0.pure(5).map(_ * 2).runAsync().await)
+
   it should "raise errors" in {
     val ex = new LambdaConversionException("it broke")
-    val o = ex.raiseError[IOh, Unit]
+    val o  = ex.raiseError[IOh, Unit]
     a[LambdaConversionException] should be thrownBy {
       o()
         .andThen {

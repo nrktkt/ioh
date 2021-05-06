@@ -3,7 +3,7 @@ import mill.scalalib.publish._
 import scalalib._
 
 object ioh extends ScalaModule with PublishModule {
-  def scalaVersion = "2.13.1"
+  def scalaVersion = "2.13.6"
 
   def publishVersion = "0.1.0"
 
